@@ -9,6 +9,7 @@ interface HoloButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
+  fullWidth?: boolean;
 }
 
 const HoloButton = ({
@@ -18,6 +19,7 @@ const HoloButton = ({
   onClick,
   disabled = false,
   size = "md",
+  fullWidth = false,
 }: HoloButtonProps) => {
   const [isPressed, setIsPressed] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -68,6 +70,7 @@ const HoloButton = ({
         "transition duration-300 ease-apple active:scale-[0.98]",
         isPressed ? "scale-[0.98]" : "",
         disabled && "opacity-50 cursor-not-allowed",
+        fullWidth && "w-full",
         className
       )}
       onClick={handleClick}
@@ -98,3 +101,4 @@ const HoloButton = ({
 };
 
 export default HoloButton;
+export type { HoloButtonProps };

@@ -18,7 +18,7 @@ const About = () => {
     <Layout>
       <div className="space-y-16">
         <section className="text-center mb-12">
-          <HoloText element="h1" className="text-4xl md:text-5xl font-bold mb-4">
+          <HoloText as="h1" className="text-4xl md:text-5xl font-bold mb-4">
             About HoloGlass UI
           </HoloText>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
