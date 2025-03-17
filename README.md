@@ -1,8 +1,6 @@
 
 # HoloGlass UI Design Concept
 
-![HoloGlass UI](public/images/background.svg)
-
 ## Project Overview
 
 HoloGlass UI is a futuristic design concept that combines neo-glassmorphism with holographic elements to create an immersive and visually stunning user interface.
